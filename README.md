@@ -35,23 +35,39 @@ This dataset presents challenges typical of medical data:
 
 2. **Feature Engineering**
 
-   * Encode binary categoricals (e.g., `sex`, `ca`) with label encoding
+   * Encode binary categoricals (e.g., `sex`) with label encoding
    * One-hot encode multi-class categoricals (e.g., `race`, `dnr`)
    * Detect and remove redundant features via correlation and information gain
 
-3. **Modeling (Preview)**
+3. **Model Training**
 
-   * Use **XGBoost** and **Random Forest** as main classifiers
-   * Address class imbalance with **SMOTE** or undersampling (optional)
+   * Training using **XGBoost** and **Random Forest**
+   * Grid Search and Random Search for hyperparameter tuning
+   * Optionally apply SMOTE to address class imbalance
+
+4. **Evaluation**
+
+   * ROC AUC, F1 score, precision-recall metrics on test set
+   * Confusion matrix and classification report for interpretation
 
 ---
 
 ### Setup and Requirements
 
-To install the environment, make sure you have Python 3.8+ and run:
+ 1. Create a new environment (Python 3.10 recommended)
 
 ```bash
-git clone https://github.com/JanSmigielski/mortality_prediction.git
-cd mortality_prediction
+conda create -n credit-risk-xai python=3.10
+```
+
+ 2. Activate the enviroment
+
+```bash
+conda activate credit-risk-xai
+```
+
+ 3. Install the required packages from requirements.txt
+
+```bash
 pip install -r requirements.txt
 ```
