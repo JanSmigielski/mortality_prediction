@@ -57,13 +57,13 @@ This dataset presents challenges typical of medical data:
  1. Create a new environment (Python 3.10 recommended)
 
 ```bash
-conda create -n credit-risk-xai python=3.10
+conda create -n mortality-prediction python=3.10
 ```
 
  2. Activate the enviroment
 
 ```bash
-conda activate credit-risk-xai
+conda activate mortality-prediction
 ```
 
  3. Install the required packages from requirements.txt
