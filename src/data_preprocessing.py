@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from sklearn.impute import SimpleImputer, KNNImputer
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.impute import KNNImputer
+from sklearn.preprocessing import LabelEncoder
 
 def suggested_imputations(data):
     impute_values = {
